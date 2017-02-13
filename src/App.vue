@@ -15,5 +15,7 @@ export default {
 #app {
 	font-size: .4rem;
 	color: #333;
+	width: 10rem;
+	margin: 0 auto;
 }
 </style>
