@@ -13,7 +13,7 @@
 
   <div>
     <h4>最近熱映</h4>
-    <banner :movies="bannerData" :slidesPerView="5" ></banner>
+    <banner :link="'MovieDetails'" :movies="bannerData" :slidesPerView="5" ></banner>
   </div>
 
 	<div class="blockBtnBox">

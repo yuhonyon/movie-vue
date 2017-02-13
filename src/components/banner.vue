@@ -1,8 +1,8 @@
 <template>
 	<div class="swiper-container banner">
 	  <div class="swiper-wrapper">
-	    <div class="swiper-slide" v-for="movie in movies">
-		    <router-link :to="{name:'MovieDetails',params:{id:movie.id}}">
+	    <div class="swiper-slide" v-for="(movie,index) in movies">
+		    <router-link :to="{name:link,params:{movieid:movie.id,id:movie.id}}" >
 				<div class="banner-content">
 					<div><img :src="movie.img"></div>
 				<h5>{{movie.nm}}</h5>
@@ -19,21 +19,18 @@
 export default {
 	props: {
         movies:Array,
-        slidesPerView:Number
+        slidesPerView:Number,
+        link:String
     },
   data () {
     return {
-      mySwiper:{},
-      dat: {
-
-      }
+      mySwiper:{}
     };
   }, 
   mounted () {
       this.mySwiper = new Swiper('.banner', {
        direction: 'horizontal',
-       slidesPerView:this.slidesPerView,
-       loop: true
+       slidesPerView:this.slidesPerView
      });
    },
    updated(){
@@ -42,7 +39,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+a.active .banner-content img{
+	opacity: 1;
+}
 .banner-content{
 	width: 100%;
 	height: 4rem;

@@ -6,6 +6,7 @@ import Cinema from 'views/cinema'
 import CinemaDetails from 'views/cinema-details'
 import Movie from 'views/movie'
 import MovieDetails from 'views/movie-details'
+import CinemaMovieDetails from 'views/cinema-movie-details'
 Vue.use(Router)
 
 export default new Router({
@@ -26,9 +27,21 @@ export default new Router({
       component: Cinema
     },
     {
-      path: '/CinemaDetails',
+      path: '/CinemaDetails/:cinemaid',
       name: 'CinemaDetails',
-      component: CinemaDetails
+      component: CinemaDetails,
+      children:[
+        {
+          path:':movieid',
+          name: 'CinemaMovieDetails',
+          component: CinemaMovieDetails
+        },
+        {
+          path:"",
+          name: 'CinemaMovieDetails',
+          component: CinemaMovieDetails
+        }
+      ]
     },
     {
       path: '/Movie',

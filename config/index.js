@@ -31,6 +31,17 @@ module.exports = {
         '/movie/*': {
         target: 'http://m.maoyan.com',
         changeOrigin:true
+      },
+      '/showtime/*': {
+        target: 'http://m.maoyan.com',
+        changeOrigin:true
+      },
+        '/myapi/*': {
+        target: 'http://m.maoyan.com',
+        changeOrigin:true,
+        pathRewrite: {
+          '^/myapi': ''
+        }
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

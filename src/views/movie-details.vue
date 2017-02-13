@@ -50,7 +50,7 @@ export default {
     }
   },
   created () {
-    this.getMovieData();
+     this.getMovieData();
   },
   methods:{
       getMovieData(){
