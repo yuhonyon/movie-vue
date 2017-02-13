@@ -1,0 +1,11 @@
+@import 'common/value';
+@import 'common/mixin';
+@import 'common/reset';
+@import 'common/class';
+@import 'header';
+
+
+.swiper-pagination-bullet{
+    width: .2rem;
+    height: .2rem;
+  }

@@ -1,0 +1,68 @@
+
+//不使用display进行隐藏
+@mixin display-none() {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+//请浮动:clearfix()
+@mixin clearfix() {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+//圆角
+@mixin border-radius($tl,$tr,$br,$bl){
+    @if $tl != 0px & $tl != 0 {
+       border-top-left-radius: $tl; 
+    }
+    @if $tr != 0px & $tr != 0 {
+       border-top-right-radius: $tr; 
+    }
+    @if $br != 0px & $br != 0 {
+       border-bottom-right-radius: $br; 
+    }
+    @if $bl != 0px & $bl != 0 {
+       border-bottom-left-radius: $bl; 
+    }
+}
+
+//居中:center-block()
+@mixin center-block() {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//文字超出隐藏
+@mixin text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//ie8 rgba  bg
+@mixin bg-rgba($alphaColor){
+    background:$alphaColor;
+    -ms-filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#{ie-hex-str($alphaColor)}', endColorstr='#{ie-hex-str($alphaColor)}');     
+  
+}
+
+
+
+
+@mixin opacity($opacity){
+    filter:alpha(opacity=$opacity); 
+    opacity:$opacity;
+}

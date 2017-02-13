@@ -1,0 +1,22 @@
+body{
+	padding-top: 1rem;
+}
+.header{
+	height: 1rem;
+	z-index: 9;
+	line-height: 1rem;
+	text-align:center;
+	background: #df2d2d;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	i {
+		position: absolute;
+		color: #fff;
+		left: .2rem;
+	}
+}
