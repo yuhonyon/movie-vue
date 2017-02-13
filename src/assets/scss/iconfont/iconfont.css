@@ -1,11 +1,10 @@
-
 @font-face {
   font-family: 'iconfont';  /* project id 230709 */
-  src: url('//at.alicdn.com/t/font_ug0oxgwa4qpycik9.eot');
-  src: url('//at.alicdn.com/t/font_ug0oxgwa4qpycik9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_ug0oxgwa4qpycik9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_ug0oxgwa4qpycik9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_ug0oxgwa4qpycik9.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_28pioc2ve2buik9.eot');
+  src: url('//at.alicdn.com/t/font_28pioc2ve2buik9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_28pioc2ve2buik9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_28pioc2ve2buik9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_28pioc2ve2buik9.svg#iconfont') format('svg');
 }
 
 .iconfont {
@@ -21,4 +20,10 @@
 .icon-jiantou:before { content: "\e64c"; }
 
 .icon-dianyingicon:before { content: "\e604"; }
+
+.icon-jiantou-up-copy:before { content: "\e64d"; }
+
+.icon-jiantou-down-copy:before { content: "\e64e"; }
+
+.icon-jiantou-right-copy:before { content: "\e64f"; }
 

@@ -1,6 +1,5 @@
 # movie-vue
-
-> vue2.0 + webpack 2.0 + axios
+> vue2.0 + webpack 2.0 + vue-router + axios
 
 
 ## API
@@ -15,6 +14,10 @@
 ![](http://ww1.sinaimg.cn/large/82eaf5a8gy1fcoltaskblj209k0fbjuu)
 
 ![](http://ww1.sinaimg.cn/large/82eaf5a8gy1fcoluo1o8lj20630famzs)
+
+![](http://ww1.sinaimg.cn/large/8551f2b1gy1fcp7z7oe3lj20dr0mm0t8)
+
+![](http://ww1.sinaimg.cn/large/8551f2b1gy1fcp82hvmayj20d00o6gpv)
 
 ## 安裝
 

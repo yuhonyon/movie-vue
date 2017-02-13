@@ -6,8 +6,8 @@
 			<div class="town" @click="handleClick(index)">
 				{{key}}
 				<span>({{item.length}}家)</span>
-				<var v-if="show[index]">上</var>
-				<var v-else>下</var>
+				<var v-if="show[index]"><i class="iconfont icon-jiantou-up-copy"></i></var>
+				<var v-else><i class="iconfont icon-jiantou-down-copy"></i></var>
 			</div>
 			<ul v-show="show[index]">
 				<li class="cinema" v-for="i in item">
@@ -70,6 +70,11 @@ export default {
 			padding:0 0.2rem;
 			font-size:0.28rem;
 			color:#7a7a7a;
+			var{
+				float: right;
+				font-size: .2rem;
+				color: #999;
+			}
 			span{
 				font-size:0.25rem;
 			}

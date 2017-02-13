@@ -5,7 +5,7 @@
 		<movie-list v-for="movie in MovieListData" :key="movie.id" :id="movie.id" :img="movie.img" :title="movie.nm" :details="movie.scm" :time="movie.showInfo" :score="movie.sc" :tag="movie['3d']"></movie-list>
 	</ul>
 	<div>
-		<a href="javascript:void(0);" class="more" @click="getMoreData">加载更多 <i class="iconfont icon-jiantou"></i></a>
+		<a href="javascript:void(0);" class="more" @click="getMoreData">加载更多 <i class="iconfont icon-jiantou-down-copy"></i></a>
 	</div>
   </div>
 
